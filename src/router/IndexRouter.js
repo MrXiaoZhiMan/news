@@ -10,7 +10,7 @@ export default function IndexRouter() {
          <Route path='/login' component={Login} />
          {/* <Route path='/' component={NewsSandBox} /> */}
           <Route path='/'  render={()=>{
-             localStorage.getItem("token")?
+            return localStorage.getItem("token")?
              <NewsSandBox></NewsSandBox>:
             //  Redirect重定向 到 login组件中
              <Redirect to='/login' />
