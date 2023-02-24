@@ -9,12 +9,12 @@ export default function IndexRouter() {
        <Switch>
          <Route path='/login' component={Login} />
          {/* <Route path='/' component={NewsSandBox} /> */}
-          <Route path='/'  render={()=>{
-            return localStorage.getItem("token")?
+          <Route path='/'  render={()=> 
+             localStorage.getItem("token")?
              <NewsSandBox></NewsSandBox>:
-            //  Redirect重定向 到 login组件中
+             //  Redirect重定向 到 login组件中
              <Redirect to='/login' />
-          }} /> 
+          } /> 
        </Switch>
     </HashRouter>
   )
