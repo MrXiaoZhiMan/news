@@ -1,5 +1,5 @@
 import IndexRouter from './router/IndexRouter';
-import './App.css';
+// import './App.css';
 
 function App() {
   // return (
@@ -20,13 +20,7 @@ function App() {
     //   </header>
     // </div>
   // );
-  return (
-      <div>
-        <IndexRouter>
-          
-        </IndexRouter>
-      </div>
-  )
+  return  <IndexRouter></IndexRouter>
 }
 
 export default App;
